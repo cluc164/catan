@@ -1,0 +1,48 @@
+.board {
+    margin: 20px;
+    width: 1150px;
+    height: 1000px;
+    border: 1px solid black;
+}
+
+.row1 {
+    margin-top: 45px;
+    margin-left: 21%;
+    position: relative;
+    float: left;
+}
+
+.row2 {
+    margin-left: 14%;
+    position: relative;
+    float: left;
+}
+
+.row3 {
+    margin-left: 7%;
+    position: relative;
+    float: left;
+}
+
+.row4 {
+    position: relative;
+    float: left;
+}
+
+.row5 {
+    margin-left: 7%;
+    position: relative;
+    float: left;
+}
+
+.row6 {
+    margin-left: 14%;
+    position: relative;
+    float: left;
+}
+
+.row7 {
+    margin-left: 21%;
+    position: relative;
+    float: left;
+}
