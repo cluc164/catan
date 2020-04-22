@@ -80,23 +80,22 @@ class Board extends Component {
     this.setState({board: newBoard, placing: false})
   }
 
-  setPlace(val) {
+  setPlace(roadOrSettlement, val) {
     this.state.boardRef.forEach((row) => {
       row.forEach((tile) => {
         if (tile) {
-          tile.current.setPlacing(val)
+          tile.current.setPlacing(roadOrSettlement, val)
         }
       })
     })
   }
 
-  donePlacing() {
-    this.setPlace(false)
+  donePlacing(roadOrSettlement) {
+    this.setPlace(roadOrSettlement, false)
   }
 
   render() {
-    const { board, placing, boardRef } = this.state;
-    console.log(placing)
+    const { board, boardRef } = this.state;
 
     return (
       <div>

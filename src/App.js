@@ -13,7 +13,11 @@ class App extends Component {
   }
 
   placeSettlement() {
-    this.board.current.setPlace(true)
+    this.board.current.setPlace('settlement', true)
+  }
+
+  placeRoad() {
+    this.board.current.setPlace('road', true)
   }
 
   render() {
@@ -21,6 +25,7 @@ class App extends Component {
       <div className="App">
         <Board ref={this.board}/>
         <button className="settlementPlacer" onClick={() => this.placeSettlement()}>Place Settlement</button>
+        <button className="settlementPlacer" onClick={() => this.placeRoad()}>Place Road</button>
       </div>
     );
   }
